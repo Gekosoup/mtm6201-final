@@ -1,3 +1,54 @@
+/*//////////// NAV BAR /////////////*/
+
+/* NAVBAR BACKGROUND */
+.custom-navbar {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+/* LOGO */
+.logo {
+  width: 45px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* BRAND TEXT */
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* BUTTON CONTAINER */
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* CUSTOM NAV BUTTONS */
+.nav-btn {
+  background-color: #d1847f; /* your pink tone */
+  color: white;
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.nav-btn:hover {
+  background-color: #c06f6a;
+  color: white;
+}
+
+/* REMOVE DEFAULT LINK STYLES */
+.navbar a {
+  text-decoration: none;
+}
+
+/*//////////// HERO BANNER /////////////*/
+
 .hero {
   background-image: /* added overlay for readability */
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -7,4 +58,32 @@
   background-repeat: no-repeat;
   height: 100vh; /* full screen height */
   color: white;
+}
+
+
+/*//////////// - MOBILE - /////////////*/
+
+@media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .nav-btn {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
 }

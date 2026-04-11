@@ -18,21 +18,24 @@
   <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
   <div class="container"> <!-- Navbar Content -->
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo.png" alt="Logo" width="30" height="40">
+     <!-- LEFT: Logo + Name -->
+     <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" alt="logo" class="logo">
+      <span class="brand-text">Maya Taylor</span>
     </a>
 
+    <!-- Mobile toggle -->
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item fw-bold"><a class="" href="index.html">Home</a></li>
-        <li class="nav-item fw-bold"><a class="" href="about.html">About</a></li>
-        <li class="nav-item fw-bold"><a class="" href="portfolio.html">Artwork</a></li>
-        <li class="nav-item fw-bold"><a class="" href="contact.html">Contact</a></li>
-      </ul>
+    <!-- RIGHT: Nav buttons -->
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <div class="nav-buttons">
+        <a href="#" class="nav-btn">Home</a>
+        <a href="#" class="nav-btn">About</a>
+        <a href="#" class="nav-btn">Blog</a>
+      </div>
     </div>
   </div>
 </nav>
