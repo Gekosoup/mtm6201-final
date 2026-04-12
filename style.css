@@ -26,7 +26,7 @@
 }
 
 /* CUSTOM NAV BUTTONS */
-.nav-btn {
+.nav-btn, .btn-primary {
   background-color: #8ea8d8; /* Periwinkle Blue */
   color: white;
   padding: 12px 28px;
@@ -37,7 +37,7 @@
 }
 
 /* HOVER EFFECT */
-.nav-btn:hover {
+.nav-btn:hover, .btn-primary:hover {
   background-color: #6c82ac;
   color: white;
 }
@@ -64,7 +64,7 @@
 /*//////////// - MOBILE - /////////////*/
 
 @media (max-width: 768px) {
-  .nav-buttons {
+  .nav-buttons, .btn-primary {
     flex-direction: column;
     gap: 10px;
     margin-top: 15px;
