@@ -1,3 +1,18 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #0C130E;
+}
+
+.container {
+  margin: auto;
+}
+
+/* Headings use Alexandria */
+h1, h2, h3 {
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 700;
+}
+
 h2 {
   margin-bottom: 30px;
 }
@@ -29,7 +44,7 @@ h2 {
   gap: 20px;
 }
 
-/* CUSTOM NAV BUTTONS */
+/* CUSTOM BUTTONS */
 .nav-btn, .btn-primary {
   background-color: #8ea8d8; /* Periwinkle Blue */
   color: white;
@@ -51,6 +66,11 @@ h2 {
   text-decoration: none;
 }
 
+/*////////////////////////////////*/
+/*//////////// Home /////////////*/
+/*////////////////////////////////*/
+
+
 /*//////////// HERO BANNER /////////////*/
 
 .hero {
@@ -64,6 +84,20 @@ h2 {
   color: white;
 }
 
+/*////////////////////////////////*/
+/*//////////// About /////////////*/
+/*////////////////////////////////*/
+
+
+
+/* Tablets */
+
+@media (max-width: 992px) {
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+  }
+}
 
 /*//////////// - MOBILE - /////////////*/
 
