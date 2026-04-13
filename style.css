@@ -4,7 +4,8 @@ body {
 }
 
 .container {
-  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Headings use Alexandria */
