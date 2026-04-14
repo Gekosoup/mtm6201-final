@@ -126,17 +126,39 @@ h2 {
 
 /* Start */
 
+/* slide img over to show overlay */
+
+.slide .photo-overlay,
+.slide img {
+  transition: transform .5s ease-out;
+}
+
+.slide .photo-overlay {
+  transform: translateX(-100%);
+}
+
+.slide:hover .photo-overlay {
+  transform: translateX(0);	
+}
+
+/* Start */
+
+/* CONTAINER */
 .slide {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
 }
 
 /* IMAGE */
 .slide img {
   width: 100%;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* IMAGE ZOOM */
+.slide:hover img {
+  transform: scale(1.2);
 }
 
 /* OVERLAY */
@@ -144,54 +166,6 @@ h2 {
   position: absolute;
   inset: 0;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background: rgba(0,0,0,0.5);
-  color: white;
-  text-align: center;
-  padding: 20px;
-
-  transform: translateX(-100%);
-  transition: transform 0.5s ease;
-}
-
-/* HOVER */
-.slide:hover .photo-overlay {
-  transform: translateX(0);
-}
-
-/* IMAGE ZOOM */
-.slide:hover img {
-  transform: scale(1.1);
-}
-
-.photo {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-/* Start */
-
-/* IMAGE ZOOM */
-.photo img {
-  width: 100%;
-  display: block;
-  transition: transform 0.5s ease-in-out;
-}
-
-.photo:hover img {
-  transform: scale(1.2); /* 1.5 is too aggressive */
-}
-
-/* OVERLAY */
-.photo-overlay {
-  position: absolute;
-  inset: 0; /* shorthand for top/right/bottom/left */
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,12 +180,10 @@ h2 {
   transition: opacity 0.5s ease;
 }
 
-/* IMPORTANT: trigger from parent */
-.photo:hover .photo-overlay {
+/* HOVER TRIGGER */
+.slide:hover .photo-overlay {
   opacity: 1;
 }
-
-/* End */
 
 
 
