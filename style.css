@@ -9,7 +9,7 @@ body {
 }
 
 /* Headings use Alexandria */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Alexandria', sans-serif;
   font-weight: 700;
 }
@@ -288,8 +288,9 @@ h2 {
 @media (max-width: 768px) {
   .nav-buttons, .btn-primary {
     flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
 
   .nav-btn {
