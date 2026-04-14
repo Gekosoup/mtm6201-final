@@ -9,7 +9,7 @@ body {
 }
 
 /* Headings use Alexandria */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Alexandria', sans-serif;
   font-weight: 700;
 }
