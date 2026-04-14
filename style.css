@@ -135,7 +135,7 @@ h2 {
   padding: 8px 18px;
   border-radius: 999px; /* pill shape */
 
-  background: #e0e0e0;
+  background: #f2f2f2;
   color: #8ea8d8; /* Periwinkle Blue */
 
   text-decoration: none;
@@ -146,15 +146,15 @@ h2 {
 
 /* HOVER */
 .subnav-link:hover {
-  background:#e0e0e0;
-  color: #8ea8d8; /* Periwinkle Blue */
+  background: #c8d4ec; /* Soft Periwinkle Blue */
+  color: #000;
   transform: translateY(-2px);
 }
 
 /* ACTIVE */
 .subnav-link.active {
   background: #8ea8d8; /* Periwinkle Blue */
-  color: #e0e0e0;
+  color: white;
 }
 
 /* Start */
