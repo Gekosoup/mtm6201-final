@@ -101,12 +101,6 @@ h2 {
 /*//////////// About /////////////*/
 /*////////////////////////////////*/
 
-
-
-/*////////////////////////////////*/
-/*////////// Portfolio ///////////*/
-/*////////////////////////////////*/
-
 /* BAR HEIGHT */
 .progress {
   height: 10px;
@@ -123,6 +117,44 @@ h2 {
 /* TEXT STYLE */
 .skills span {
   font-weight: 500;
+}
+
+.subnav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/*////////////////////////////////*/
+/*////////// Portfolio ///////////*/
+/*////////////////////////////////*/
+
+/* LINKS */
+.subnav-link {
+  padding: 8px 18px;
+  border-radius: 999px; /* pill shape */
+
+  background: #f2f2f2;
+  color: #333;
+
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.subnav-link:hover {
+  background: #dce5d3; /* soft green */
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* ACTIVE */
+.subnav-link.active {
+  background: #45553D;
+  color: white;
 }
 
 /* Start */
