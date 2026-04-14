@@ -57,6 +57,10 @@ h2 {
   border: none;
 }
 
+btn-dark {
+  font-weight: 500;
+}
+
 /* HOVER EFFECT */
 .nav-btn:hover, .btn-primary:hover {
   background-color: #6c82ac;
@@ -124,6 +128,54 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.resume .card {
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.resume .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.resume ul {
+  padding-left: 18px;
+}
+
+.resume h3 {
+  font-size: 22px;
+}
+
+:root {
+  --resume-accent: #8ea8d8;
+}
+
+/* override Bootstrap accents locally */
+.accent-border {
+  border-color: var(--resume-accent) !important;
+}
+
+.accent-bg {
+  background-color: var(--resume-accent) !important;
+  color: #fff;
+}
+
+.resume .badge {
+  background-color: var(--resume-accent) !important;
+  color: #fff;
+}
+
+.resume h3 {
+  border-left: 4px solid var(--resume-accent);
+  padding-left: 12px;
+}
+
+.resume .card:hover {
+  box-shadow: 0 10px 25px rgba(142, 168, 216, 0.25);
+  transform: translateY(-3px);
+  transition: 0.2s ease-in-out;
 }
 
 /*////////////////////////////////*/
