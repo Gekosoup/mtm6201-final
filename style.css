@@ -135,8 +135,8 @@ h2 {
   padding: 8px 18px;
   border-radius: 999px; /* pill shape */
 
-  background: #f2f2f2;
-  color: #333;
+  background: #e0e0e0;
+  color: #8ea8d8; /* Periwinkle Blue */
 
   text-decoration: none;
   font-size: 0.9rem;
@@ -146,15 +146,15 @@ h2 {
 
 /* HOVER */
 .subnav-link:hover {
-  background: #dce5d3; /* soft green */
-  color: #000;
+  background:#e0e0e0;
+  color: #8ea8d8; /* Periwinkle Blue */
   transform: translateY(-2px);
 }
 
 /* ACTIVE */
 .subnav-link.active {
-  background: #45553D;
-  color: white;
+  background: #8ea8d8; /* Periwinkle Blue */
+  color: #e0e0e0;
 }
 
 /* Start */
