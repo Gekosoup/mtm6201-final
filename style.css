@@ -143,29 +143,22 @@ h2 {
 
 /* Start */
 
-/* CONTAINER */
-.slide {
-  position: relative;
-  overflow: hidden;
-}
-
-/* IMAGE */
-.slide img {
+/* IMAGE ZOOM */
+.photo img {
   width: 100%;
   display: block;
   transition: transform 0.5s ease-in-out;
 }
 
-/* IMAGE ZOOM */
-.slide:hover img {
-  transform: scale(1.2);
+.photo:hover img {
+  transform: scale(1.2); /* 1.5 is too aggressive */
 }
 
 /* OVERLAY */
 .photo-overlay {
   position: absolute;
-  inset: 0;
-
+  inset: 0; /* shorthand for top/right/bottom/left */
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,10 +173,12 @@ h2 {
   transition: opacity 0.5s ease;
 }
 
-/* HOVER TRIGGER */
-.slide:hover .photo-overlay {
+/* IMPORTANT: trigger from parent */
+.photo:hover .photo-overlay {
   opacity: 1;
 }
+
+/* End */
 
 
 
