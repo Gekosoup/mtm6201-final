@@ -95,6 +95,24 @@ h2 {
 /*////////// Portfolio ///////////*/
 /*////////////////////////////////*/
 
+/* BAR HEIGHT */
+.progress {
+  height: 10px;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+}
+
+/* BAR COLOR */
+.progress-bar {
+  background-color: #8ea8d8; /* Periwinkle Blue */
+  border-radius: 10px;
+}
+
+/* TEXT STYLE */
+.skills span {
+  font-weight: 500;
+}
+
 /* Start */
 
 .slide {
