@@ -1,6 +1,11 @@
 body {
   font-family: 'Quicksand', sans-serif;
-  color: #0C130E;
+}
+
+/* THEME */
+:root {
+  --bs-primary: #8ea8d8;
+  --bs-primary-rgb: 142,168,216;
 }
 
 .container {
@@ -10,7 +15,7 @@ body {
 
 /* Headings use Alexandria */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Alexandria', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
 }
 
@@ -52,7 +57,18 @@ h2 {
   padding: 12px 28px;
   border-radius: 12px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.btn-light {
+  background-color: white; 
+  color: rgb(108, 124, 178);
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
   transition: 0.3s ease;
   border: none;
 }
@@ -88,6 +104,13 @@ btn-dark {
   background-repeat: no-repeat;
   height: 100vh; /* full screen height */
   color: white;
+  min-height: 80vh;
+}
+
+.hero h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
 .card {
@@ -330,35 +353,63 @@ btn-dark {
 
 @media (max-width: 992px) {
   .hero {
-    text-align: center;
-    padding: 60px 20px;
+    min-height: 60vh;
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-btn {
+    margin-left: 0;
+    padding: 10px 0;
+    display: block;
   }
 }
 
 /*//////////// - MOBILE - /////////////*/
 
 @media (max-width: 768px) {
-  .nav-buttons, .btn-primary {
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+
+  h2 {
+    font-size: 1.8rem;
   }
 
-  .nav-btn {
-    text-align: center;
-    width: 100%;
-  }
-  
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
-  .row {
-    text-align: center;
+  .hero p {
+    font-size: 1rem;
   }
 
   .card {
     margin-bottom: 20px;
+  }
+
+  .photo-overlay h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+
+  .hero {
+    text-align: center;
+    padding: 50px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero .btn {
+    width: 100%;
+  }
+
+  h2::after {
+    width: 40px;
   }
 }
