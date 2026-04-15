@@ -167,14 +167,42 @@ btn-dark {
   gap: 10px;
 }
 
-.resume .card {
-  border-radius: 12px;
-  transition: all 0.2s ease-in-out;
+:root {
+  --resume-accent: #8ea8d8;
+}
+
+/* override Bootstrap accents locally */
+.accent-border {
+  border-color: var(--resume-accent) !important;
+}
+
+.accent-bg {
+  background-color: var(--resume-accent) !important;
+  color: #fff;
+}
+
+.resume .badge {
+  background-color: var(--resume-accent) !important;
+  color: #fff;
+}
+
+.resume h3 {
+  border-left: 4px solid var(--resume-accent);
+  padding-left: 12px;
 }
 
 .resume .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(142, 168, 216, 0.25);
+  transform: translateY(-3px);
+  transition: 0.2s ease-in-out;
+  background-color: var(--resume-accent) !important;
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
+.resume .card {
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
 }
 
 .resume ul {
