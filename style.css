@@ -423,6 +423,29 @@ img:hover {
 
 @media (max-width: 768px) {
 
+    /* CUSTOM BUTTONS */
+  .nav-btn {
+    background-color: white; /* Periwinkle Blue */
+    color:  #8ea8d8; /* Periwinkle Blue */
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+    border: none;
+  }
+
+  .nav-btn:hover {
+    background-color: #8ea8d8; /* Periwinkle Blue */
+    color:  white; /* Periwinkle Blue */
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+    border: none;
+  }
+
   h2 {
     font-size: 1.8rem;
   }
