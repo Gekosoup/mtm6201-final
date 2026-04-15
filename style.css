@@ -151,16 +151,6 @@ btn-dark {
   font-weight: 500;
 }
 
-/* Section titles */
-h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--bs-primary);
-  margin: 10px auto 0;
-}
-
 /* Image hover */
 img {
   transition: 0.3s;
