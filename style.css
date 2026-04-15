@@ -14,13 +14,27 @@ body {
 }
 
 /* Headings use Alexandria */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Quicksand', sans-serif;
+h1, h2, h3 {
+  font-family: 'Alexandria', sans-serif;
   font-weight: 700;
 }
 
-h2 {
+h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+
+h1, h2 {
   margin-bottom: 30px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--bs-primary);
+  margin: 0 auto 0;
 }
 
 /*//////////// NAV BAR /////////////*/
@@ -64,7 +78,7 @@ h2 {
 
 .btn-light {
   background-color: white; 
-  color: rgb(108, 124, 178);
+  color:#192f57;
   padding: 12px 28px;
   border-radius: 12px;
   text-decoration: none;
@@ -79,7 +93,7 @@ btn-dark {
 
 /* HOVER EFFECT */
 .nav-btn:hover, .btn-primary:hover {
-  background-color: #6c82ac;
+  background-color: #192f57;
   color: white;
 }
 
@@ -97,7 +111,7 @@ btn-dark {
 
 .hero {
   background-image: /* added overlay for readability */
-    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    linear-gradient(rgba(95, 108, 118, 0.3), rgba(255, 255, 255, 0.3)),
     url('images/hero-banner.jpg');
   background-size: cover;
   background-position: center;
@@ -292,7 +306,7 @@ btn-dark {
 }
 
 .photo:hover img {
-  transform: scale(1.2); /* 1.5 is too aggressive */
+  transform: scale(1.2); 
 }
 
 /* OVERLAY */
