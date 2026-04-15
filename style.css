@@ -197,7 +197,6 @@ btn-dark {
   transition: 0.2s ease-in-out;
   background-color: var(--resume-accent) !important;
   color: #fff;
-  text-decoration-color: #fff;
 }
 
 .resume .card {
