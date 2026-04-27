@@ -19,7 +19,7 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-h4, h5, h6 {
+h3, h4, h5, h6 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
 }
@@ -193,7 +193,7 @@ img:hover {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: #c8d4ec; /* Soft Periwinkle Blue */
   top: 0;
   bottom: 0;
   left: 50%;
@@ -269,7 +269,7 @@ img:hover {
   color: #fff;
 }
 
-.resume .badge {
+.resume .badge .card {
   background-color: var(--resume-accent) !important;
   color: #fff;
 }
